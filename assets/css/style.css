@@ -1,0 +1,228 @@
+:root {
+    --backg: grey;
+    --text: white;
+    --high: orange;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+body {
+    position: relative ;
+    font-size: 16px;
+    background-color: var(--backg);
+    color: var(--text); 
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: var(--high);
+    color: var(--backg);
+    margin-right: 10px;
+    font-size: 18px;
+}
+nav a:hover {
+    background-size: 100%;
+    color: var(--high);
+}
+
+.smoothscroll {
+    text-decoration: var(--high);
+}
+
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    color: var(--backg) ;
+    padding: 20px;
+    align-items: center;
+}
+header {
+    padding: 5px;
+    background-color: var(--high);
+    font-size: 2.5rem;
+}
+
+
+h4, h3, p {
+   margin: 0;
+}
+
+main {
+    margin: 0 20px 0 20px;
+}
+
+
+footer {
+    justify-content: right;
+}
+/*class selectors*/
+.background {
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background h3 {
+    padding: 5px 5px;
+}
+
+.display {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.information > div {
+    flex: 0 0 85%;
+  }
+
+.information p {
+    margin-bottom: 20px;
+  }
+
+address a {
+    padding: 20px 20px;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+.contact-me {
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.box {
+    border: 6px solid var(--high);
+    color: white;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    background-size: 150%;
+    font-size: 0.9rem;
+}
+
+.box h4 {
+      font-size: 1.5vw;
+  }
+
+/*first project*/
+.box:first-child {
+      min-height: 300px;
+      flex-basis: 100%;
+  }
+  
+.box:hover {
+    background-color: white;
+    transform: scale(1.1);
+  }
+
+.box div {
+    background-color: var(--backg);
+    padding: 8px 8px;
+  }
+
+/*item images and styling*/
+
+
+.refactor {
+    background-image: url("../images/refractor.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.snippet {
+    background-image: url("../images/placeholder1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.place {
+    background-image: url("../images/placeholder2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*responsive viewports*/
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+      }
+    
+    header h1 h2 h3 {
+      width: 75%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 6vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+
+    .information > h4 {
+      border-bottom: 3px solid var(--high);
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 4vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box:first-child {
+      flex-basis: 100%;
+    }
+  
+    .box:first-child {
+      min-height: 150px;
+    }
+  
+    .background {
+      justify-content: center;
+      text-align: center;
+    }
+  }
