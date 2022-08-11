@@ -18,7 +18,7 @@ My motivation today is to alter the codebase so that it follows accessibility st
 This is to demonstrate my own personal portfolio website that will be used to show recruiters and others on the different projects I have participated in. 
  
 ## Demo
- 
+https://darrelwu.github.io/Personal-Portfolio-Page/
 
  
 <img src="./assets/images/portfolio1.jpg">
