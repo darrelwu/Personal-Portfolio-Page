@@ -20,17 +20,18 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
-
 nav a {
-    text-decoration: var(--high);
-    color: var(--backg);
+    text-decoration: underline var(--high);
+    color: var(--text);
     margin-right: 10px;
     font-size: 18px;
+    justify-content: flex-end;
 }
 nav a:hover {
     background-size: 100%;
-    color: var(--high);
+    color: var(--backg);
 }
 
 .smoothscroll {
@@ -64,7 +65,7 @@ main {
 }
 
 
-footer {
+header, footer {
     justify-content: right;
 }
 /*class selectors*/
